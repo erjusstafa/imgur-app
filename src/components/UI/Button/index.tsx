@@ -1,14 +1,15 @@
-import React from "react";
 import { ButtonType } from "../../../types";
 import style from "./index.module.css";
 
 function Button(props: ButtonType) {
+  const {bgColor, color, text} = props
+
   return (
     <button
-      style={{ backgroundColor: props.bgColor, color: props.color }}
+      style={{ backgroundColor: bgColor, color: color }}
       className={style.buttonContainer}
     >
-      {props.text}
+      {text}
     </button>
   );
 }

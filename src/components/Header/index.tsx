@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import style from "./index.module.css";
 import Button from "../UI/Button";
 import Image from "../UI/Image";
@@ -19,13 +19,15 @@ function Header() {
   return (
     <>
       <div className={style.containerHeader}>
-        <Image
-          src={logo}
-          alt="img"
-          width={150}
-          height={50}
-          className="logoIcon"
-        />
+        <a href="/">
+          <Image
+            src={logo}
+            alt="img"
+            width={150}
+            height={50}
+            className="logoIcon"
+          />
+        </a>
         <Input valueInput={value} onChangeValue={handleInputChange} />
         <div className={style.rightContentHeader}>
           <div className={style.rightButtonHeader}>

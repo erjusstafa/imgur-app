@@ -33,6 +33,11 @@ export interface ViralImage {
   label: string;
 }
 
+// sort
+export interface sortId {
+  value: string;
+  label: string;
+}
 // id
 export interface DetailPageParams {
   id: string;
@@ -43,13 +48,9 @@ export interface MainInterfaceApi {
 
 //Paginations
 export interface PaginationProps {
-  handlePrevbtn: () => void;
-  handleNextbtn: () => void;
-  renderPageNumbers: any;
   pages: number[];
   currentPage: number;
-  pageDecrementBtn: any;
-  pageIncrementBtn: any;
+  setcurrentPage: (current: number) => void;
 }
 export interface IInitialState {
   dataApi: MainInterfaceApi[];

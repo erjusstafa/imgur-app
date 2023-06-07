@@ -1,16 +1,17 @@
 import { ImageType } from "../../../types";
 import style from "./index.module.css";
 function Image(props: ImageType) {
+  const {src, height, width, radius, type, alt, className} = props
   return (
     <img
-      src={props.src}
+      src={src}
       style={{
-        height: props.height,
-        width: props.width,
-        borderRadius: props.radius,
+        height: height,
+        width: width,
+        borderRadius: radius,
       }}
-      alt={props.alt}
-      className={props.type === "jpeg" ? style.ImageList : style.Image}
+      alt={alt}
+      className={type === "jpeg" ? style.ImageList : style.Image}
     />
   );
 }

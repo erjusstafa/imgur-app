@@ -16,11 +16,13 @@ interface IProps {
 }
 
 function ImageList(props: IProps) {
+
+  const {item , index} = props
   return (
     <a
-      href={`/${props.item.id}`}
+      href={`/${item.id}`}
       className={style.BoxContainer}
-      key={props.index}
+      key={index}
     >
       <div className={style.CardContainer}>
         {/*   {Array.isArray(props.item?.images) &&
@@ -29,7 +31,7 @@ function ImageList(props: IProps) {
               return ( */}
         <Image
           src={""}
-          alt={props.item.account_url}
+          alt={item.account_url}
           width={"auto"}
           height={350}
           className="icona"
@@ -41,11 +43,11 @@ function ImageList(props: IProps) {
           })} */}
 
         <div className={style.BottomCard}>
-          <h1 className={style.title}>{props.item.title}</h1>
+          <h1 className={style.title}>{item.title}</h1>
           <div className={style.info}>
-            <span>⇧&nbsp;{props.item.ups} &nbsp;⇩</span>
-            <span>✉&nbsp;{props.item.comment_count}</span>
-            <span>👁&nbsp;{props.item.views}</span>
+            <span>⇧&nbsp;{item.ups} &nbsp;⇩</span>
+            <span>✉&nbsp;{item.comment_count}</span>
+            <span>👁&nbsp;{item.views}</span>
           </div>
         </div>
       </div>

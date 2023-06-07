@@ -2,14 +2,18 @@
   height: 100vh;
   background: linear-gradient(180deg, rgba(37, 38, 41, 0.24) 26.22%, #27292d),
     linear-gradient(0deg, #171544, #171544);
+  position: absolute;
+  top: 6.5885vw;
+  width: 100%;
 }
 
 .DetailPageContainer {
   width: calc(100% - 200px);
-  height: 100%;
-  margin: auto;
+   margin: auto;
   display: grid;
   grid-template-columns: 10% auto 20%;
+  position: relative;
+    top: 7.3206vw;
 }
 
 .socialdata {

@@ -1,5 +1,5 @@
 import { PayloadAction, createAsyncThunk, createSlice } from "@reduxjs/toolkit";
-import { ApiInterface, IInitialState, MainInterfaceApi } from "../../types";
+import { IInitialState } from "../../types";
 
 let REACT_APP_ENDPOINT = "https://api.imgur.com/3";
 export let token = "ee9a4a7b0ff010d664365ad1a418165971469719";
