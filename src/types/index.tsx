@@ -59,6 +59,15 @@ export interface IInitialState {
   error: string;
 }
 
+export interface ISelect {
+  selectedOption: string;
+  setSelectedOption: (event: React.ChangeEvent<HTMLSelectElement>) => void;
+  selectedOptionViral: string;
+  setSelectedOptionViral: (event: React.ChangeEvent<HTMLSelectElement>) => void;
+  selectedSort: string;
+  setSelectedSort: (event: React.ChangeEvent<HTMLSelectElement>) => void;
+}
+
 // API Interface
 export interface ApiInterface {
   account_id: number;
