@@ -1,0 +1,108 @@
+.DetailPage {
+  height: 100vh;
+  background: linear-gradient(180deg, rgba(37, 38, 41, 0.24) 26.22%, #27292d),
+    linear-gradient(0deg, #171544, #171544);
+}
+
+.DetailPageContainer {
+  width: calc(100% - 200px);
+  height: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 10% auto 20%;
+}
+
+.socialdata {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.votes,
+.comment {
+  width: 3.6603vw;
+  border: 1px solid rgb(216, 213, 213);
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  line-height: 2.92825vw;
+}
+.ImageDetails {
+  display: block;
+  padding: 0 2.1961vw;
+}
+.ImageDetailsTitle {
+  display: flex;
+  justify-content: space-between;
+}
+.ImageDetailsTitle .title {
+  font-family: Proxima Nova Bold, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 2.049vw;
+  line-height: 130%;
+  color: #fff;
+  overflow-wrap: break-word;
+}
+.ImageDetailsTitle .next {
+  background-color: rgb(100, 50, 249);
+  padding: 5px 20px;
+  color: white;
+  position: relative;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.headerImg {
+  display: grid;
+  grid-template-columns: 4% auto 10%;
+  font-family: Proxima Nova Regular, Helvetica Neue, Helvetica, Arial,
+    sans-serif;
+  color: #b4b9c2;
+  font-size: 0.878vw;
+  line-height: 12px;
+}
+.headerImgMore {
+  display: flex;
+  flex-direction: column;
+  line-height: 15px;
+}
+.headerImgMore .more {
+  text-align: right !important;
+  font-size: 19px;
+}
+
+.headerImgMore .layout {
+  min-width: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: Proxima Nova Bold, Helvetica Neue, Helvetica, Arial, sans-serif;
+  color: #1bb76e;
+  cursor: pointer;
+}
+.comment {
+  margin-top: 40px;
+}
+
+.othersTitle {
+  border-bottom: 1px solid white;
+  color: white;
+  padding: 10px 0;
+  font-family: Proxima Nova ExtraBold, Helvetica Neue, Helvetica, Arial,
+    sans-serif;
+  font-size: 12px;
+  line-height: 1.3;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding-bottom: 6px;
+  margin-bottom: 16px;
+}
+
+.description {
+  color: white;
+  font-size: 30px;
+  letter-spacing: 1px;
+}

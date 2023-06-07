@@ -1,0 +1,55 @@
+.mainView {
+  min-height: 100vh;
+  font-size: 100%;
+  font-family: Proxima Nova Regular, Helvetica Neue, Helvetica, Arial,
+    sans-serif;
+  background-color: #2e3035;
+  color: #fff;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: center;
+  padding: 56px 15px;
+  grid-gap: 15px;
+}
+
+.selectContainer {
+  position: relative;
+  top: -39px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 166px;
+}
+
+.selectOption,
+.selectViral {
+  width: 100px;
+  height: 50px;
+  background-color: rgb(47, 56, 136);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.selectOption option,
+.selectViral option {
+  border: none;
+  outline: none;
+}
+@media screen and (min-width: 1900px) {
+  .mainView {
+    grid-template-columns: repeat(4, auto);
+  }
+}
+
+@media screen and (min-width: 2400px) {
+  .mainView {
+    grid-template-columns: repeat(5, auto);
+  }
+}
+
+.item.active {
+  color: aquamarine !important;
+}

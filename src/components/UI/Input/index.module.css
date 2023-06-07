@@ -1,0 +1,23 @@
+.inputContainer {
+  width: 500px;
+  height: 40px;
+  line-height: 1.15;
+  background: hsla(0, 0%, 100%, 0.25);
+  border: 1px solid transparent;
+  padding: 8px 35px 8px 10px;
+  border-radius: 3px;
+  outline: 0 none;
+  min-height: 36px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  color: #fff;
+  text-shadow: inherit;
+  font-size: 25px;
+  -webkit-text-fill-color: inherit;
+}
+
+.inputContainer::placeholder {
+  color: white;
+  font-weight: 200;
+  opacity: 0.6;
+}

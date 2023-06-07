@@ -1,0 +1,44 @@
+.containerHeader {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  height: 5.1244vw;
+  padding: 15px;
+  justify-items: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  background-color: rgb(47, 56, 136);
+  z-index: 99;
+  left: 0;
+  right: 0;
+}
+.title {
+  font-size: 34px;
+  font-family: Proxima Nova ExtraBold, Helvetica Neue, Helvetica, Arial,
+    sans-serif;
+  letter-spacing: 0.6px;
+  font-weight: 600;
+  color: #aed8ea;
+  text-align: center;
+  position: relative;
+  top: 9.66vw;
+  padding: 2.1961vw 0;
+}
+.rightContentHeader {
+  display: flex;
+  flex-direction: row;
+}
+
+.rightButtonHeader {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  right: 4.392vw;
+}
+
+.rightButtonHeader img {
+  margin: 0 2.2vw !important;
+}

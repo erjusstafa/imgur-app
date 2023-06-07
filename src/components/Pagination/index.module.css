@@ -1,0 +1,73 @@
+.WrappPagination {
+  padding-top: 60px;
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+.pageNumbers {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.pageNumbers li {
+  margin: 5px;
+  cursor: pointer;
+  color: rgb(39, 39, 39);
+}
+
+.item.active {
+  color: red !important;
+}
+.pageNumbers li button {
+  padding: 10px 40px;
+  background-color: #2f3888;
+  outline: none;
+  border: 1px solid white;
+  color: white;
+  cursor: pointer;
+}
+
+.NumberList {
+  display: none !important;
+}
+.NumberList :nth-child(2),
+.NumberList :nth-child(3),
+.NumberList :nth-child(4),
+.NumberList :nth-child(5) {
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 50%;
+  background-color: white;
+  display: grid;
+  place-content: center;
+}
+
+.NumberList {
+  display: none;
+  padding: 40px;
+}
+
+/* media*/
+
+@media screen and (max-width: 600px) {
+  .WrappPagination {
+    margin-right: 51px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .pageNumbers li button {
+    padding: 5px 15px;
+  }
+}
+
+@media screen and (max-width: 600) {
+  .NumberList :nth-child(2),
+  .NumberList :nth-child(3),
+  .NumberList :nth-child(4),
+  .NumberList :nth-child(5) {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}

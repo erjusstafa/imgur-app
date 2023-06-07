@@ -1,0 +1,17 @@
+.container .title {
+  font-size: 34px;
+  font-family: Proxima Nova ExtraBold, Helvetica Neue, Helvetica, Arial,
+    sans-serif;
+  letter-spacing: 0.6px;
+  font-weight: 600;
+  color: #aed8ea;
+  text-align: center;
+  margin-top: 12px;
+  min-height: 34px;
+  position: relative;
+  padding: 30px 0;
+}
+
+.imgContainer {
+  height: 300px !important;
+}
