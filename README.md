@@ -22,6 +22,8 @@
 # - Axios 
 # - CSS Module
 
+#I've also created global components -> src/components/UI
+
    
    
    
