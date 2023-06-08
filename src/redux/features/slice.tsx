@@ -7,7 +7,7 @@ export let token = "ee9a4a7b0ff010d664365ad1a418165971469719";
 export const fetchImguApi = createAsyncThunk(
   "imgur/fetchImguApi",
   async (item: string) => {
-    return await fetch(REACT_APP_ENDPOINT + `/gallery/${item}` /* ${item} */, {
+    return await fetch(REACT_APP_ENDPOINT + `/gallery/${item}`, {
       headers: {
         Authorization: `Bearer ${token}`, //'token'
       },

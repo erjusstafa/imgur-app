@@ -12,32 +12,7 @@
   padding: 56px 15px;
   grid-gap: 15px;
 }
-
-.selectContainer {
-  position: relative;
-  top: -39px;
-  display: flex;
-  justify-content: space-between;
-  padding: 0 166px;
-}
-
-.selectOption,
-.selectViral {
-  width: 100px;
-  height: 50px;
-  background-color: rgb(47, 56, 136);
-  color: white;
-  font-weight: 600;
-  cursor: pointer;
-  border: none;
-  outline: none;
-}
-
-.selectOption option,
-.selectViral option {
-  border: none;
-  outline: none;
-}
+ 
 @media screen and (min-width: 1900px) {
   .mainView {
     grid-template-columns: repeat(4, auto);
@@ -50,6 +25,3 @@
   }
 }
 
-.item.active {
-  color: aquamarine !important;
-}

@@ -23,11 +23,10 @@ function Select(props: ISelect) {
     setSelectedOption,
     selectedOptionViral,
     setSelectedOptionViral,
-    selectedSort,
-    setSelectedSort,
+    sortOption,
+    handleSortOptionChange,
   } = props;
 
-  
   return (
     <div className={style.selectContainer}>
       <select
@@ -58,8 +57,8 @@ function Select(props: ISelect) {
         </select>
         &nbsp;
         <select
-          value={selectedSort}
-          onChange={setSelectedSort}
+          value={sortOption}
+          onChange={handleSortOptionChange}
           className={style.selectViral}
         >
           <option value="">Sort by</option>

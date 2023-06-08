@@ -1,49 +1,26 @@
 import style from "./index.module.css";
 import Image from "../UI/Image";
+import { IImageList } from "../../types";
 
-interface IItem {
-  id: string;
-  account_url: string;
-  title: string;
-  ups: number;
-  comment_count: number;
-  views: number;
-}
-
-interface IProps {
-  item: IItem;
-  index: number;
-}
-
-function ImageList(props: IProps) {
-
-  const {item , index} = props
+function ImageList(props: IImageList) {
+  const { item, index } = props;
   return (
-    <a
-      href={`/${item.id}`}
-      className={style.BoxContainer}
-      key={index}
-    >
+    <a href={`/${item.id}`} className={style.BoxContainer} key={index}>
       <div className={style.CardContainer}>
-        {/*   {Array.isArray(props.item?.images) &&
-          props.item?.images.map((element: any) => {
-             if (element.type === "image/jpeg" || element.type === "image/png") {
-              return ( */}
         <Image
-          src={""}
+          src={item?.images[0].link}
           alt={item.account_url}
           width={"auto"}
           height={350}
           className="icona"
         />
-        {/*  );
-            } else {
-              return <h1> </h1>;
-            }
-          })} */}
 
         <div className={style.BottomCard}>
-          <h1 className={style.title}>{item.title}</h1>
+          <h1 className={style.title}>
+            {item.title.length > 40
+              ? item.title.substring(0, 40) + "..."
+              : item.title}
+          </h1>
           <div className={style.info}>
             <span>⇧&nbsp;{item.ups} &nbsp;⇩</span>
             <span>✉&nbsp;{item.comment_count}</span>

@@ -1,0 +1,10 @@
+.vide0{
+    position: relative;
+}
+
+.title{
+    position: absolute;
+    top: 0;
+    color: antiquewhite;
+    left: 10px;
+ }
